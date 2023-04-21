@@ -3,6 +3,11 @@
   ---white-color: #fff;
   ---black-color: #000;
   ---text-color: #333;
+  ---border-color: #dbdbdb;
+
+  --header-height: 120px;
+  --navbar-height: 34px;
+  --header-with-search-height: cacl(var(--header-height)- var(--navbar-height));
 }
 
 * {
@@ -47,4 +52,41 @@ html {
     opacity: 1;
     transform: scale(1);
   }
+}
+
+@keyframes growth {
+  from {
+    transform: scale(var(--growth-from));
+  }
+  to {
+    transform: scale(var(--growth-from));
+  }
+}
+
+/* Button Style */
+
+.btn {
+  min-width: 142px;
+  height: 36px;
+  border: none;
+  border-radius: 2px;
+  font-size: 1rem;
+  padding: 0;
+  color: var(---text-color);
+  background-color: white;
+  cursor: pointer;
+}
+.btn.btn--normal:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.btn.btn--primary {
+  color: var(---white-color);
+  background-color: var(---primary-color);
+}
+
+.btn.btn--disabled {
+  color: #949494;
+  cursor: default;
+  background-color: #c3c3c3;
 }

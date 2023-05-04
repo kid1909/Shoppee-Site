@@ -1,0 +1,243 @@
+.app_container {
+  background-color: #f5f5f5;
+}
+.app_content {
+  margin-top: 24px;
+  background-color: #f5f5f5;
+}
+
+.category {
+  border-radius: 2px;
+  background-color: var(---white-color);
+}
+
+.category__heading {
+  color: var(---text-color);
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  margin-top: 0;
+}
+
+.category__heading-icon {
+  font-size: 1rem;
+  margin-right: 4px;
+  position: relative;
+  top: -1px;
+}
+.category-list {
+  padding: 0 0 4px 0;
+  list-style: none;
+}
+
+.category-item {
+}
+
+.category-item--active {
+}
+
+.category-item__link {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(---text-color);
+  padding: 4px 16px;
+  display: block;
+  /* right: 0;
+  transition: right linear 0.1s; */
+}
+
+.category-item__link:hover {
+  /* right: -4px; */
+  color: var(---primary-color);
+}
+
+.home-filter {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 12px 22px;
+  background-color: rgba(0, 0, 0, 0.04);
+  width: 100%;
+}
+.home-filter__label {
+  padding-right: 4px;
+  font-size: 1.2rem;
+  color: #555;
+  margin-right: 16px;
+}
+
+.btn-filter--active {
+  background-color: var(---primary-color);
+  color: var(---white-color);
+}
+.home-filter__btn2 {
+  min-width: 90px;
+  margin-right: 15px;
+}
+.home-filter__page {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.home-filter__page-num {
+  font-size: 1rem;
+  color: var(---text-color);
+  margin-right: 20px;
+}
+
+.home-filter__page-current {
+  color: var(---primary-color);
+}
+.home-filter__page-control {
+}
+
+.home-filter__btn__filter {
+  background-color: var(---white-color);
+  border: #3b3a3a;
+  width: 15px;
+  padding: 10px;
+  cursor: pointer;
+}
+.home-filter__btn__filter--active {
+  background-color: #b1aeae62;
+}
+
+.home-filter__btn__filter:active {
+  background-color: #c4c1c1b2;
+}
+
+.home-filter__btn__filter-inside {
+  font-size: 12px;
+}
+/* Selection filter */
+.select-input {
+  position: relative;
+  min-width: 120px;
+  height: 34px;
+  padding: 0 12px;
+  border-radius: 2px;
+  background-color: var(---white-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+.select-input::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 20px;
+  top: 50;
+  left: 0;
+}
+.select-input__label {
+  position: absolute;
+}
+.select-input:hover .select-input__list {
+  display: block;
+}
+.select-input__item {
+  display: flex;
+  flex-direction: column;
+}
+.select-input__list {
+  position: absolute;
+  right: 0;
+  top: 60%;
+  border-radius: 2px;
+  background-color: var(---white-color);
+  width: 104px;
+  height: auto;
+  display: none;
+}
+
+.select-input__link {
+  text-decoration: none;
+
+  color: var(---text-color);
+}
+
+.select-input__link:hover {
+  color: var(---primary-color);
+}
+
+/*Product List */
+.home-products {
+  margin-top: 20px;
+}
+.home-product-main {
+  background-color: white;
+  height: 320px;
+  width: 160px;
+  display: flex;
+  margin-top: 10px;
+}
+.home-products-pic {
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  object-fit: contain;
+  width: 80%;
+  height: 60%;
+}
+.home-products-header {
+  padding-left: 5px;
+  font-size: 10px;
+  overflow: hidden;
+}
+.home-products-infor {
+  padding-left: 5px;
+}
+.home-products-price {
+  padding-left: 5px;
+}
+.home-product-list {
+  cursor: pointer;
+}
+
+.home-products-btn {
+  background-color: #5f5b5b1f;
+  height: 50px;
+  top: -40px;
+  position: relative;
+  display: flex;
+}
+.home-product-btn-list {
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 40px;
+  background-color: transparent;
+  border: 1px;
+}
+
+.home-product-btn-list:focus {
+  color: #f5f5f5;
+  background-color: var(---primary-color);
+}
+
+.modal__body2 {
+  display: none;
+  --growth-from: 0.7;
+  --growth-to: 1;
+  background-color: var(---white-color);
+  margin: auto;
+  position: relative;
+  z-index: 1;
+  border-radius: 3px;
+  padding: 7px;
+  animation: growth linear 0.1s;
+}
+.active-modal {
+  display: block;
+}
+
+.modal--content {
+}
+.modal--content__title {
+}
+.modal--content__image {
+  object-fit: contain;
+  min-width: 300px;
+  height: 400px;
+}

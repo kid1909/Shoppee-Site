@@ -7,7 +7,7 @@ import ps5 from "../assets/img/ps5-control.webp";
 import xbox from "../assets/img/xbox1.jpg";
 import switch1 from "../assets/img/switch.jpg";
 import { useState } from "react";
-import empty from "../assets/img/empty.jpg";
+// import empty from "../assets/img/empty.jpg";
 
 function Navbar() {
   const [modal, setModal] = useState(false);
@@ -200,7 +200,7 @@ function Navbar() {
             <i className="header__cart-icon fas fa-shopping-cart">
               {/*  ==========  No cart: header__cart-list--no-cart  ==========  */}
               <div className="header__cart-list">
-                <img src={empty} alt="" className="header__cart-no-cart-img" />
+                {/* <img src={empty} alt="" className="header__cart-no-cart-img" /> */}
                 <p className="header__cart-list-no-cart-msg">
                   Your cart is empty
                 </p>
